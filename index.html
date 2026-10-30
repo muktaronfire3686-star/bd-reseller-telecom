@@ -67,6 +67,8 @@ function render(){
 let q=document.getElementById('search').value.toLowerCase();
 document.getElementById('products').innerHTML=phones.filter(p=>(type==='All'||p.condition===type)&&p.name.toLowerCase().includes(q)).map(p=>`<div class="card"><img src="${p.img}" alt="Mobile phone"><div class="info"><span class="badge">${p.condition} Phone</span><h3>${p.name}</h3><div class="price">${p.price}</div><p>${p.details}</p><a class="order" target="_blank" href="https://wa.me/?text=${encodeURIComponent('Hello, I am interested in '+p.name+' priced '+p.price+'. Is it available?')}">Order on WhatsApp</a></div></div>`).join('');
 }
+  https://wa.me/8801328473686?text=
+
 render();
 </script>
 </body>
